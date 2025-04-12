@@ -1,0 +1,15 @@
+meta {
+  name: Ver User
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:3002/auth/users
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmJlZjhjOGI5ZWFkMTFiN2RjNGFhYiIsInVzZXJuYW1lIjoiYSIsImVtYWlsIjoiYSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDM3MDQ3MSwiZXhwIjoxNzQwMzc0MDcxfQ.bGF7iALOQ8XaEgdXR-cCARDwzmJWlWTDUeFOWCKqJUM
+}

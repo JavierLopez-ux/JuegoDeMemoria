@@ -1,0 +1,25 @@
+meta {
+  name: Registrar Partida
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:3002/api/partida-en-curso/registrar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmJmYjlhZDI4NTBjMzhlZTE5OWIzYiIsInVzZXJuYW1lIjoiYiIsImVtYWlsIjoiYW1pbGNhckBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDA0MzU5NTEsImV4cCI6MTc0MDQzOTU1MX0.tPqKFm5QYkQmI4q8MbC4DjvDawu_dv1WNb2Vc1KZ2M8
+}
+
+body:json {
+  {
+    "usuarioId": "67bbfb9ad2850c38ee199b3b",        
+    "nivel": "fácil",              
+    "resultado": "ganaste",        
+    "tiempo_usado": 120   
+  }
+  
+}

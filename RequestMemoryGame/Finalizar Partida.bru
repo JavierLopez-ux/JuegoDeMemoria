@@ -1,0 +1,23 @@
+meta {
+  name: Finalizar Partida
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:3002/api/partida-en-curso/finalizar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmRlZjZkNmRiZTQ4MjU3ZTRiM2ZmMSIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDUwMDk5NiwiZXhwIjoxNzQwNTA0NTk2fQ.jiehH_NRSMwqRIErzkflserD_SSPBUDHRx_VqpJF9Lc
+}
+
+body:json {
+  
+  
+  {
+    "partidaId": "67bdef7a6dbe48257e4b3ff4"
+  }
+}

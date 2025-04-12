@@ -1,0 +1,26 @@
+meta {
+  name: Eliminar Estadisticas
+  type: http
+  seq: 15
+}
+
+get {
+  url: http://localhost:3002/estadisticas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmRmN2Q5OTFiOGZkNDliZDVlYjNmZCIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDU0MDY1NiwiZXhwIjoxNzQwNTQ0MjU2fQ.38rDFn-KuHiv3ZxCXURudmSP0LYgoDdjf7Ig19z2avs
+}
+
+body:json {
+  {
+      "usuario": "67bd59f5108ba9ccd79336bb",
+      "tiempo_usado": 1,
+      "victoria": true,
+      "derrota": false,
+      "abandono": false
+  }
+  
+}

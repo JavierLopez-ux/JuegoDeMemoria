@@ -1,0 +1,21 @@
+meta {
+  name: Registrar Usuario
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3002/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "username": "kike",
+      "email": "nuevo_usuario@xamp.com",
+      "password": "123",
+      "role": "admin"  
+  }
+  
+}

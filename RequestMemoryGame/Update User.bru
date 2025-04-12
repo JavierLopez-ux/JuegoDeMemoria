@@ -1,0 +1,27 @@
+meta {
+  name: Update User
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3001/auth/update/:id
+  body: json
+  auth: bearer
+}
+
+params:path {
+  id: 67b88bd235b1e18b8c9d3180
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjdmNmQ4MTQ5NDNjYzIwMzllOWQ4YiIsInVzZXJuYW1lIjoidXN1YXJpbzEiLCJlbWFpbCI6InVzdWFyaW8xQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQwMTEyNDIyLCJleHAiOjE3NDAxMTYwMjJ9.DA6EAlHdnvNxRM4W6dpxS1vBao_HXsMldhU37VP6P4E
+}
+
+body:json {
+  {
+      "username": "NuevoNombre",
+      "email": "nuevoemail@example.com",
+      "password": "nuevacontraseña"
+  }
+}

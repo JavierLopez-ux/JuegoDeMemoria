@@ -1,0 +1,22 @@
+meta {
+  name: Iniciar Partida
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:3002/api/partida-en-curso/iniciar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmRmN2Q5OTFiOGZkNDliZDVlYjNmZCIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDU0NDkyMSwiZXhwIjoxNzQwNTQ4NTIxfQ.yCtnjO_igE8wZdbsERyX2jB-QnQnTVfwnGwikWvi7eg
+}
+
+body:json {
+  {
+      "usuarioId": "67bd55624af6aa541a842445",
+      "tiempoLimite": 300
+  }
+}

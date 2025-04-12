@@ -1,0 +1,19 @@
+meta {
+  name: Estadistica
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3002/estadisticas/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 67bd4778810abd89ee17112f
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmQ0Nzc4ODEwYWJkODllZTE3MTEyZiIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDQ1Nzg1OCwiZXhwIjoxNzQwNDYxNDU4fQ.0eyultj_D7xL7DZdrdghazjq0tArg8UyoXemzA8xq34
+}

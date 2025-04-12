@@ -1,0 +1,26 @@
+meta {
+  name: ver Estadisticas
+  type: http
+  seq: 14
+}
+
+get {
+  url: http://localhost:3002/estadisticas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmRmN2Q5OTFiOGZkNDliZDVlYjNmZCIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDU0NTQyMywiZXhwIjoxNzQwNTQ5MDIzfQ.wEWrsyZ2TyYU-fko_4Hp6i5XfS6dW4ad3a0cIXuLntU
+}
+
+body:json {
+  {
+      "usuario": "67bd59f5108ba9ccd79336bb",
+      "tiempo_usado": 1,
+      "victoria": true,
+      "derrota": false,
+      "abandono": false
+  }
+  
+}

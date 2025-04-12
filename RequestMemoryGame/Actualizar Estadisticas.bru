@@ -1,0 +1,26 @@
+meta {
+  name: Actualizar Estadisticas
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:3002/estadisticas/actualizar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmQ1OWY1MTA4YmE5Y2NkNzkzMzZiYiIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDQ2MzM4MSwiZXhwIjoxNzQwNDY2OTgxfQ.MgmRIPknMy3CKw3FRkus1C5fayxCLehsHcg79M6T25I
+}
+
+body:json {
+  {
+      "usuario": "67bd59f5108ba9ccd79336bb",
+      "tiempo_usado": 1,
+      "victoria": true,
+      "derrota": false,
+      "abandono": false
+  }
+  
+}

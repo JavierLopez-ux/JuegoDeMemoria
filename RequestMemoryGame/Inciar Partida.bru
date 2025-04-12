@@ -1,0 +1,25 @@
+meta {
+  name: Inciar Partida
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3002/partida/registrar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YmQ1NTYyNGFmNmFhNTQxYTg0MjQ0NSIsInVzZXJuYW1lIjoia2lrZSIsImVtYWlsIjoibnVldm9fdXN1YXJpb0B4YW1wLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDQ2MTQyMCwiZXhwIjoxNzQwNDY1MDIwfQ.LpwXxR_WopbkX1YbzqoWvxiiFLKKgjn3WHRplNRmxVs
+}
+
+body:json {
+  {
+      "usuarioId": "67bd55624af6aa541a842445",
+      "nivel": "dificil",
+      "resultado": "victoria",
+      "tiempo_usado": 120
+  }
+  
+}
